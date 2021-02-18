@@ -1,0 +1,14 @@
+.filter-section{
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.filter-section h5{
+    text-align: center;
+}
+
+.filter-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

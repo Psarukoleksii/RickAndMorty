@@ -1,0 +1,13 @@
+.location-item{
+    width: 25%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #288886;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+.characters-wrapper h2{
+    text-align: center;
+}
+.characters-wrapper .pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}

@@ -1,0 +1,22 @@
+.characters-item-card{
+    width: 25%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #1e1841;
+}
+
+.characters-item-img img{
+    width: 100%;
+    display: block;
+    margin: 0.4rem auto;
+    border-radius: 0.5rem;
+}
+
+.characters-item-text p{
+    color: white;
+}

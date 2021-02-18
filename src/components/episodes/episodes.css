@@ -1,0 +1,13 @@
+.episodes-section .pages-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.episodes-section{
+    margin-bottom: 2rem;
+}
+
+.episodes-section h2{
+    text-align: center;
+}

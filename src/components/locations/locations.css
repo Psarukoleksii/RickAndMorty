@@ -1,0 +1,11 @@
+.locations-section .locations-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.locations-section h2{
+    text-align: center;
+}
+

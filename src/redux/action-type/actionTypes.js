@@ -1,0 +1,2 @@
+export const ADD_CHARACTERS = 'ADD_CHARACTERS';
+export const ADD_LOCATIONS = 'ADD_LOCATIONS';
