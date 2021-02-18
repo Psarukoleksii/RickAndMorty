@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {service} from "../../service/servise";
+import {service} from "../../service/service";
 import {CharactersList} from "./charactersList";
 import {useDispatch, useSelector} from "react-redux";
 import {addCharacters} from "../../redux/action-creator/actionCreators";

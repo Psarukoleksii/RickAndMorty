@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {FormForTodo} from "./formForTodo";
 import {ListToDo} from "./list-todo";
+import {success} from "../../config/config";
 
 export const MyWatchList = () =>{
 
@@ -16,6 +17,7 @@ export const MyWatchList = () =>{
         setList(result);
         localStorage.setItem('list', JSON.stringify(result));
         e.target[0].value = '';
+        success()
     }
 
     const handChangeInput = (id) =>{
@@ -33,6 +35,7 @@ export const MyWatchList = () =>{
         let filterPosts = list.filter(value=> value.id !== id)
         setList(filterPosts)
         localStorage.setItem('list', JSON.stringify(filterPosts))
+        success()
     }
 
     return (

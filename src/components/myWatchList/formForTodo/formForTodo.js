@@ -1,14 +1,9 @@
 import React from 'react';
 import './formForTodo.css';
+import {ToastContainer} from "react-toastify";
 
 export const FormForTodo = ({handSavePost}) => {
     return (
-        // <div>
-        //     <form onSubmit={handSavePost}>
-        //         <input type="text" required/>
-        //         <button>Add post</button>
-        //     </form>
-        // </div>
     <div className="row">
         <form className="col s12" onSubmit={handSavePost}>
             <div className="row">
@@ -16,6 +11,7 @@ export const FormForTodo = ({handSavePost}) => {
                     <input placeholder="Write your post" id="first_name" type="text" className="validate" />
                         {/*<label htmlFor="first_name">Your Post</label>*/}
                     <button className={'btn'}>Add post</button>
+                    <ToastContainer />
                 </div>
             </div>
         </form>

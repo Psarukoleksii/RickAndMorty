@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {service} from "../../service/servise";
+import {service} from "../../service/service";
 import {EpisodesList} from "./episodesList";
 import {EpisodesPages} from "./episodesPages";
 import './episodes.css';

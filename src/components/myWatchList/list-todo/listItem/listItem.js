@@ -1,5 +1,6 @@
 import React from 'react';
 import './listItem.css';
+import {ToastContainer} from "react-toastify";
 
 export const ListItem = ({items, handChangeInput, handDeletePost}) => {
 
@@ -16,6 +17,7 @@ export const ListItem = ({items, handChangeInput, handDeletePost}) => {
                     }
                 </p>
                 <button className={'btn'} onClick={() => handDeletePost(items.id)}>Delete Post</button>
+                <ToastContainer />
             </p>
         </div>
     )

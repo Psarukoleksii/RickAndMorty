@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {service} from "../../service/servise";
+import {service} from "../../service/service";
 import {LocationsList} from "./locationsList";
 import {PagesLocation} from "./pagesLocation";
 import {useDispatch, useSelector} from "react-redux";
