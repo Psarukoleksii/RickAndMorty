@@ -51,9 +51,6 @@ export const Characters = () => {
         setOneCharacter(result)
     }
 
-    console.log(oneCharacter)
-
-
     return (
         <div className={'characters-wrapper'}>
             <Modal active={active} setActive={setActive} oneCharacter={oneCharacter}/>

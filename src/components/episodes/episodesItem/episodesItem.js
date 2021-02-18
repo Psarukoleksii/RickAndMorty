@@ -3,7 +3,6 @@ import './episodesItem.css';
 
 export const EpisodesItem = ({items}) =>{
 
-    console.log(items);
     return(
         <div className={'episodes-item'}>
             <p>

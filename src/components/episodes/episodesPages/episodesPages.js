@@ -1,7 +1,7 @@
 import React from 'react';
 import {EpisodesPagesItem} from "./episodesPagesItem";
 
-export const EpisodesPages = ({count, numberPage, allPages, setNumberPage, setCount}) =>{
+export const EpisodesPages = ({count, numberPage, allPages, setNumberPage, setCount}) => {
 
     const handNextPage = () => {
         let result = [];
@@ -10,7 +10,7 @@ export const EpisodesPages = ({count, numberPage, allPages, setNumberPage, setCo
         for (let i = start; i <= end; i++) {
             result.push(i)
         }
-        if(numberPage < allPages){
+        if (numberPage < allPages) {
             setCount(result);
             setNumberPage(numberPage + 1)
         }
@@ -23,15 +23,16 @@ export const EpisodesPages = ({count, numberPage, allPages, setNumberPage, setCo
         for (let i = end; i <= start; i++) {
             result.push(i)
         }
-        if(numberPage > 1){
+        if (numberPage > 1) {
             setCount(result);
             setNumberPage(numberPage - 1)
         }
     }
 
-    return(
+    return (
         <div>
-        <EpisodesPagesItem handPrevPage={handPrevPage} handNextPage={handNextPage} allPages={allPages} numberPage={numberPage}/>
+            <EpisodesPagesItem handPrevPage={handPrevPage} handNextPage={handNextPage} allPages={allPages}
+                               numberPage={numberPage}/>
         </div>
     )
 }

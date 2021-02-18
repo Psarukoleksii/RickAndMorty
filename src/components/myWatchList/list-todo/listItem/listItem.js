@@ -17,7 +17,7 @@ export const ListItem = ({items, handChangeInput, handDeletePost}) => {
                     }
                 </p>
                 <button className={'btn'} onClick={() => handDeletePost(items.id)}>Delete Post</button>
-                <ToastContainer />
+                <ToastContainer/>
             </p>
         </div>
     )

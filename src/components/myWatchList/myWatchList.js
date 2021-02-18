@@ -3,11 +3,11 @@ import {FormForTodo} from "./formForTodo";
 import {ListToDo} from "./list-todo";
 import {success} from "../../config/config";
 
-export const MyWatchList = () =>{
+export const MyWatchList = () => {
 
     const [list, setList] = useState([])
 
-    const handSavePost = (e) =>{
+    const handSavePost = (e) => {
         e.preventDefault();
         let value = e.target[0].value;
         let id = new Date().getTime();
@@ -20,19 +20,19 @@ export const MyWatchList = () =>{
         success()
     }
 
-    const handChangeInput = (id) =>{
-        let changeList = list.map(value => value.id === id? {...value, checked: !value.checked} : value)
+    const handChangeInput = (id) => {
+        let changeList = list.map(value => value.id === id ? {...value, checked: !value.checked} : value)
         setList(changeList);
         localStorage.setItem('list', JSON.stringify(changeList));
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         let resultFromLocal = localStorage.getItem('list')
         !resultFromLocal ? setList([]) : setList(JSON.parse(resultFromLocal))
     }, [])
 
-    const handDeletePost = (id) =>{
-        let filterPosts = list.filter(value=> value.id !== id)
+    const handDeletePost = (id) => {
+        let filterPosts = list.filter(value => value.id !== id)
         setList(filterPosts)
         localStorage.setItem('list', JSON.stringify(filterPosts))
         success()

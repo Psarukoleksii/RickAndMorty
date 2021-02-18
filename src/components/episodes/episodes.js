@@ -13,7 +13,6 @@ export const Episodes = () => {
 
     const handAllEpisodes = async (count) => {
         const result = await service.getAllEpisode(count);
-        console.log(result);
         let asd = result.sort((a, b) => {
             let A = a.name
             let B = b.name
@@ -29,9 +28,6 @@ export const Episodes = () => {
     useEffect(() => {
         handAllEpisodes(count)
     }, [count])
-
-
-
 
     return (
         <div className={'episodes-section'}>
